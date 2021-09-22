@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+body {
+  display: grid;
+}
+
+header {
+  background-color: #03A3DF;
+  padding: 2%;
+}
+
+aside {
+  float: left;
+}
+
+section {
+  
+}
+
+.Instructor {
+  display: none;
+}
+
+footer {
+  background-color: #1B447F;
+  margin: 0 5%;
+  padding: 2%;
+}
