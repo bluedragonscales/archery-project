@@ -3,21 +3,63 @@
   border: 1px solid red;
 }
 
-body {
-  display: grid;
-}
-
 header {
+  display: flex;
   background-color: #03A3DF;
+  margin: 0 5%;
   padding: 2%;
 }
 
+.Flex_Img {
+  flex: 20%;
+  margin-right: 1rem;
+}
+
+.Flex_Nav {
+  flex: 70%;
+}
+
+.Flex_Nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  flex-flow: row wrap;
+  align-items: baseline;
+  align-content: space-around;
+}
+
+section a {
+  text-decoration: none;
+  color: black;
+}
+
+.Grid_Container {
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+}
+
 aside {
-  float: left;
+  grid-column: 1 / 1;
+  grid-row: 1 / 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url("../images/aside.background.png");
+}
+
+aside img {
+  height: 11rem;
+  width: 11rem;
+  margin: 2rem;
+  border-radius: 50%;
 }
 
 section {
-  
+  grid-column: 2 / 6;
+  grid-row: 1 / 4;
 }
 
 .Instructor {
@@ -25,6 +67,7 @@ section {
 }
 
 footer {
+  display: flex;
   background-color: #1B447F;
   margin: 0 5%;
   padding: 2%;
