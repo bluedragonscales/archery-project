@@ -1,10 +1,11 @@
 * {
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 header {
   display: flex;
+  flex-flow: row nowrap;
   background-color: #03A3DF;
   margin: 0 5%;
   padding: 2%;
@@ -17,6 +18,9 @@ header {
 
 .Flex_Nav {
   flex: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
 .Flex_Nav a {
@@ -26,13 +30,13 @@ header {
   font-weight: 300;
   letter-spacing: 2px;
   flex-flow: row wrap;
-  align-items: baseline;
-  align-content: space-around;
+  justify-content: flex-end;
 }
 
 section a {
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 
 .Grid_Container {
@@ -50,6 +54,15 @@ aside {
   background-image: url("../images/aside.background.png");
 }
 
+aside h3 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
 aside img {
   height: 11rem;
   width: 11rem;
@@ -57,18 +70,97 @@ aside img {
   border-radius: 50%;
 }
 
-section {
+.Main_Page {
   grid-column: 2 / 6;
   grid-row: 1 / 4;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  padding-right: 2rem;
+  letter-spacing: 1px;
 }
 
-.Instructor {
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.Main_Page figure {
+  margin: 2.7rem 1rem;
+}
+
+.Derek {
   display: none;
+  background-color: #1B447F;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 5% auto;
+  padding: 1rem;
+  width: 60%;
+  height: 60%;
+  border: solid;
+  border-radius: 10px;
+}
+
+.Amy {
+  display: none;
+  background-color: #1B447F;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 5% auto;
+  padding: 1rem;
+  width: 60%;
+  height: 60%;
+  border: solid;
+  border-radius: 10px;
+}
+
+.Nathan {
+  display: none;
+  z-index: 1;
+  background-color: #1B447F;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 5% auto;
+  padding: 1rem;
+  width: 60%;
+  height: 70%;
+  border: solid;
+  border-radius: 10px;
 }
 
 footer {
-  display: flex;
   background-color: #1B447F;
   margin: 0 5%;
   padding: 2%;
+}
+
+.Foot_Flex {
+  display: flex;
+}
+
+.Foot_Flex_Img {
+  flex: 20%;
+  margin-right: 1rem;
+}
+
+.Foot_Flex_Policy {
+  flex: 75%;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-right: 1rem;
+}
+
+.Copyright {
+  text-align: center;
+  color: white;
+  margin: 0;
 }
