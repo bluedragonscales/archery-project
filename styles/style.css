@@ -214,7 +214,7 @@ aside img {
 
 .Location {
   display: grid;
-  grid-gap: 1rem 2rem;
+  grid-gap: 0.1rem 2rem;
   justify-content: center;
 }
 
@@ -225,14 +225,22 @@ aside img {
 
 .Address {
   margin-top: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
   grid-column: 1 / 1;
+  grid-row: 2 / 2;
 }
 
 .Contact {
   margin-top: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
   grid-column: 2 / 2;
+  grid-row: 2 / 2;
+}
+
+video {
+  grid-column: 1 / 1;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 footer {
