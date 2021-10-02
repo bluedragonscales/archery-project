@@ -22,6 +22,13 @@ h3, h4 {
   letter-spacing: 1px;
 }
 
+blockquote {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 1rem;
+}
+
 header {
   display: flex;
   flex-flow: row nowrap;
@@ -203,6 +210,29 @@ aside img {
 
 .Loc_Page p {
   padding: 1rem;
+}
+
+.Location {
+  display: grid;
+  grid-gap: 1rem 2rem;
+  justify-content: center;
+}
+
+.Location h4 {
+  grid-column: 1 / 1;
+  margin-bottom: 0;
+}
+
+.Address {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  grid-column: 1 / 1;
+}
+
+.Contact {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  grid-column: 2 / 2;
 }
 
 footer {
