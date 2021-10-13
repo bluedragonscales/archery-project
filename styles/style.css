@@ -140,10 +140,6 @@ aside img {
   display: block;
 }
 
-#Derek-Profile:focus .Derek {
-  display: contents;
-}
-
 .Amy {
   display: none;
   position: absolute;
